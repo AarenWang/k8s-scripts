@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: spring-boot-docker-helloworld
+spec:
+  containers:
+  - image: jackwang11/spring-boot-docker-helloworld
+    name: spring-boot-docker-helloworld
+    ports:
+    - containerPort: 8080
+      protocol: TCP
