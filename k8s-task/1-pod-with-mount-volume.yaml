@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: time-show-app
+  labels:
+    purpose: task
+spec:
+  containers:
+  - name: time-show-app
+    image: busybox
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo `date` > /data/app/time.txt && date; sleep 2;done"] 
+    volumeMounts:
+    - name: host-data
+      mountPath: /data/app
+  volumes:
+  - name: host-data
+    hostPath: 
+      path: /data/

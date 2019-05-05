@@ -28,5 +28,4 @@ spec:
           name: agent
       volumes:
         - name: jenkins-home
-          hostPath: 
-            path: /Users/wangrenjun/dev/docker_data/jenkins_data
+          emptyDir: {}
