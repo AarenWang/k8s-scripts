@@ -3,7 +3,7 @@ https://kubernetes.io/docs/tasks/
 
 
 ## 第一个任务  Pod直接使用卷 挂载
-https://github.com/wangrenjun12/k8s-script/blob/master/task/1-pod-with-mount-volume.yaml
+https://github.com/AarenWang/k8s-scripts/blob/master/task/1-pod-with-mount-volume.yaml
    
 执行yaml文件
 ```
@@ -33,11 +33,11 @@ kubectl delete  -f 1-pod-with-mount-volume.yaml  -n task
 
 四 例子
 
-  [pv  yaml](https://github.com/wangrenjun12/k8s-script/blob/master/task/2-pv-volume.yaml)  
-  [pvc yaml](https://github.com/wangrenjun12/k8s-script/blob/master/task/2-pvc-claim.yaml) 
+  [pv  yaml](https://github.com/AarenWang/k8s-scripts/blob/master/task/2-pv-volume.yaml)  
+  [pvc yaml](https://github.com/AarenWang/k8s-scripts/blob/master/task/2-pvc-claim.yaml) 
 
 [nginx挂载持久卷](
-https://github.com/wangrenjun12/k8s-script/blob/master/task/2-nginx-with-pv.yaml)
+https://github.com/AarenWang/k8s-scripts/blob/master/task/2-nginx-with-pv.yaml)
 
  进入nginx pod 查看挂载文件
  ```
@@ -144,13 +144,13 @@ kubectl delete -f 4-statefull-one-install-pv.yaml -n task
 准备文件目录
 ```
 sudo mkdir /mnt/mysql-statefullset-data
-sudo chown wangrenjun:wangrenjun /mnt/mysql-statefullset-data
+sudo chown AarenWang:AarenWang /mnt/mysql-statefullset-data
 
 sudo mkdir /mnt/mysql-statefullset-data-1
-sudo chown wangrenjun:wangrenjun /mnt/mysql-statefullset-data-1
+sudo chown AarenWang:AarenWang /mnt/mysql-statefullset-data-1
 
 sudo mkdir /mnt/mysql-statefullset-data-2
-sudo chown wangrenjun:wangrenjun /mnt/mysql-statefullset-data-2
+sudo chown AarenWang:AarenWang /mnt/mysql-statefullset-data-2
 ```
 
 启动部署
@@ -193,7 +193,7 @@ https://www.jianshu.com/p/102c4df69af9
 ```
 
 sudo mkdir /mnt/zookeeper-data
-sudo chown wangrenjun:wangrenjun /mnt/zookeeper-data
+sudo chown AarenWang:AarenWang /mnt/zookeeper-data
 ```
 
 ## 第一个任务 CRD使用
